@@ -113,7 +113,7 @@ export const deleteReport = (report) => {
         firebase.firestore().collection('reports').doc(report).delete()
         dispatch({
             type: 'DELETE_REPORT',
-            // payload: todo
+            
         })
     }
 }
